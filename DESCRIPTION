@@ -1,4 +1,4 @@
-Package: ParallelStructureDT
+Package: ParallelStructureIR
 Type: Package
 Title: function to run parallel jobs in STRUCTURE
 Version: 1.12
