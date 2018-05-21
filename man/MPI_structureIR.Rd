@@ -210,6 +210,8 @@ MPI_structure(joblist = NULL, n_cpu = NULL, structure_path = Mac_path, infile = 
  \item{updatefreq}{
      
 }
+ \item{ancestpint}{Confidence intervals}
+ \item{numboxes}{Width of confidence intervals}
 
   \item{...}{
      see http://pritch.bsd.uchicago.edu/software/readme_2_1/node33.html
