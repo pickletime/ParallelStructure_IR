@@ -14,6 +14,9 @@
 #You should have received a copy of the GNU General Public License
 #along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+#DT 2018-05-21
+#WHAT AM I EVEN DOING
+
 
 parallel_structure <-
 function(joblist=NULL,n_cpu=NULL,structure_path=Mac_path,infile=NULL,outpath=NULL,numinds=NULL,numloci=NULL,
@@ -21,7 +24,7 @@ function(joblist=NULL,n_cpu=NULL,structure_path=Mac_path,infile=NULL,outpath=NUL
 		recessivealleles=0,phased=0,extracol=0,missing=-9,ploidy=2,noadmix=0,linkage=0,usepopinfo=0,locprior=0,
 		inferalpha=1,alpha=1.0,popalphas=0,unifprioralpha=1,alphamax=10.0,alphapropsd=0.025,freqscorr=1,onefst=0,
 		fpriormean=0.01,fpriorsd=0.05,inferlambda=0,lambda=1.0,computeprob=1,pfromflagonly=0,ancestdist=0,
-		startatpopinfo=0,metrofreq=10,updatefreq=1,printqhat=0,revert_convert=0,randomize=1,gensback=2, migrprior=0.05){
+		startatpopinfo=0,metrofreq=10,updatefreq=1,printqhat=0,revert_convert=0,randomize=1,gensback=2, migrprior=0.05, ancestpint = 0.975, numboxes = 1000){
 			
 	
 		require(parallel)
@@ -32,7 +35,7 @@ function(joblist=NULL,n_cpu=NULL,structure_path=Mac_path,infile=NULL,outpath=NUL
 				 noadmix=noadmix,linkage=linkage,usepopinfo=usepopinfo,locprior=locprior,inferalpha=inferalpha,alpha=alpha,popalphas=popalphas,
 				 unifprioralpha=unifprioralpha,alphamax=alphamax,alphapropsd=alphapropsd,freqscorr=freqscorr,onefst=onefst,fpriormean=fpriormean,fpriorsd=fpriorsd,
 				 inferlambda=inferlambda,lambda=lambda,computeprob=computeprob,pfromflagonly=pfromflagonly,ancestdist=ancestdist,startatpopinfo=startatpopinfo,
-				 metrofreq=metrofreq,updatefreq=updatefreq,printqhat=printqhat,randomize=randomize,gensback=gensback,migrprior=migrprior)
+				 metrofreq=metrofreq,updatefreq=updatefreq,printqhat=printqhat,randomize=randomize,gensback=gensback,migrprior=migrprior, ancestpint = ancestpint, numboxes = numboxes)
 
 	mes=paste('starting work at ',Sys.time(),sep='')
 	print(mes)
