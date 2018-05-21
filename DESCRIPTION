@@ -1,7 +1,7 @@
 Package: ParallelStructureDT
 Type: Package
 Title: function to run parallel jobs in STRUCTURE
-Version: 1.1.dt
+Version: 1.12
 Date: 2013-03-11 (dt: 2018-05-21)
 Author: francois Besnier edit by Ian, minor edits by DT
 Maintainer: francois besnier <francois.besnier@imr.no>
