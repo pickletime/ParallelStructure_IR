@@ -1,9 +1,9 @@
-Package: ParallelStructureIR
+Package: ParallelStructureDT
 Type: Package
 Title: function to run parallel jobs in STRUCTURE
-Version: 1.1
-Date: 2013-03-11
-Author: francois Besnier edit by Ian
+Version: 1.1.dt
+Date: 2013-03-11 (dt: 2018-05-21)
+Author: francois Besnier edit by Ian, minor edits by DT
 Maintainer: francois besnier <francois.besnier@imr.no>
 Description: MPI_structure" and "parallel_structure" are two R functions that calls STRUCTURE automatically for a set of predefined jobs. Jobs are distributed among all available computing units (cores or cpu) in order to make the best use of multi-core computer while running analysis of large data sets in STRUCTURE. MPI_structure" and "parallel_structure" have the same functionality and use the same set of parameters. MPI_structure relies on Rmpi package whereas parallel_structure relies on the "parallel" package.
 License: GPL3
