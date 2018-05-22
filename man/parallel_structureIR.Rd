@@ -30,7 +30,7 @@ MPI_structure(joblist = NULL, n_cpu = NULL, structure_path = Mac_path, infile = 
   
   pfromflagonly = 0, ancestdist = 0, startatpopinfo = 0, metrofreq = 10, updatefreq = 1, printqhat = 0,revert_convert=0,
   
-  randomize=1, gensback=2, migrprior=0.05, ancestpint = 0.975, numboxes = 1000)
+  randomize=1, gensback=2, migrprior=0.05, ancestpint = 0.975)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -211,10 +211,10 @@ MPI_structure(joblist = NULL, n_cpu = NULL, structure_path = Mac_path, infile = 
   Confidence intervals
  
 }
- \item{numboxes}{
-  Width of confidence intervals
- 
-}
+# \item{numboxes}{
+#  Width of confidence intervals
+# 
+#}
 
   \item{...}{
      see http://pritch.bsd.uchicago.edu/software/readme_2_1/node33.html
