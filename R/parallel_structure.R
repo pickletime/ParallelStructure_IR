@@ -35,7 +35,7 @@ function(joblist=NULL,n_cpu=NULL,structure_path=Mac_path,infile=NULL,outpath=NUL
 				 noadmix=noadmix,linkage=linkage,usepopinfo=usepopinfo,locprior=locprior,inferalpha=inferalpha,alpha=alpha,popalphas=popalphas,
 				 unifprioralpha=unifprioralpha,alphamax=alphamax,alphapropsd=alphapropsd,freqscorr=freqscorr,onefst=onefst,fpriormean=fpriormean,fpriorsd=fpriorsd,
 				 inferlambda=inferlambda,lambda=lambda,computeprob=computeprob,pfromflagonly=pfromflagonly,ancestdist=ancestdist,startatpopinfo=startatpopinfo,
-				 metrofreq=metrofreq,updatefreq=updatefreq,printqhat=printqhat,randomize=randomize,gensback=gensback,migrprior=migrprior, ancestpint = ancestpint,)
+				 metrofreq=metrofreq,updatefreq=updatefreq,printqhat=printqhat,randomize=randomize,gensback=gensback,migrprior=migrprior, ancestpint = ancestpint)
 
 	mes=paste('starting work at ',Sys.time(),sep='')
 	print(mes)
