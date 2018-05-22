@@ -156,8 +156,8 @@ function(LocPar,GlobPar){
 	l=paste('#define ANCESTPINT ',as.character(GlobPar$ancestpint),sep='')
 	write(l,file=LocPar$name_param,append=T)
 	
-	l=paste('#define NUMBOXES ',as.character(GlobPar$ancestpint),sep='')
-	write(l,file=LocPar$name_param,append=T)
+	#l=paste('#define NUMBOXES ',as.character(GlobPar$ancestpint),sep='')
+	#write(l,file=LocPar$name_param,append=T)
 		
 	
 
